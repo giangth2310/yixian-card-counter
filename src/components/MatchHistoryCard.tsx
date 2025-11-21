@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Card as CardType } from '../models/model';
 import { useTracking } from '../contexts/TrackingContext';
+import translateCardName from '../utils/translateCardName';
 import './MatchHistoryCard.css';
 
 interface MatchHistoryCardProps {
@@ -46,7 +47,7 @@ const MatchHistoryCard: React.FC<MatchHistoryCardProps> = ({ card }) => {
     <div className="match-history-card">
       <img 
         src={imageSrc}
-        alt={card.name}
+        alt={translateCardName(card.name)}
         className="match-history-card-image"
       />
       <button 

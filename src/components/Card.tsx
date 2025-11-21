@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Card as CardType } from '../models/model';
 import { LEVEL_COLORS } from '../constants/colors';
 import { useTracking } from '../contexts/TrackingContext';
+import translateCardName from '../utils/translateCardName';
 import './Card.css';
 
 interface CardProps {
@@ -40,7 +41,7 @@ const Card: React.FC<CardProps> = ({
         }}
       />
       <div className="card-footer">
-        <div className="card-name">{card.name}</div>
+        <div className="card-name">{translateCardName(card.name)}</div>
         {tail && <div className="card-tail">{tail}</div>}
       </div>
     </div>

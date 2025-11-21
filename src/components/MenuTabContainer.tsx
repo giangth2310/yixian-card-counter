@@ -7,9 +7,9 @@ interface MenuTabContainerProps {
 }
 
 const tabs = [
-  {id: 'match-record', label: '对战记录'},
-  {id: 'card-deck', label: '剩余牌库'},
-  {id: 'card-library', label: '管理追踪卡牌'}
+  {id: 'match-record', label: 'Match Record'},
+  {id: 'card-deck', label: 'Card Deck'},
+  {id: 'card-library', label: 'Manage Tracking'}
 ]
 
 const MenuTabContainer: React.FC<MenuTabContainerProps> = ({ activeTab, onTabChange }) => {
@@ -56,7 +56,7 @@ const MenuTabContainer: React.FC<MenuTabContainerProps> = ({ activeTab, onTabCha
         className="menu-tab-button floating-window-btn"
         onClick={handleFloatingWindow}
       >
-        悬浮窗
+        Floating Window
       </button>
       {floatingWindowStatus && (
         <div className="floating-window-status">

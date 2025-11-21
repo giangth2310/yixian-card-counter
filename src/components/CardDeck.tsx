@@ -11,29 +11,29 @@ interface CardDeckProps {
 }
 
 const sectTabs: Tab[] = [
-  { id: 'cloud-spirit', label: '云灵剑宗' },
-  { id: 'heptastar', label: '七星阁' },
-  { id: 'five-element', label: '五行道盟' },
-  { id: 'duan-xuan', label: '锻玄宗' }
+  { id: 'cloud-spirit', label: 'Cloud Spirit' },
+  { id: 'heptastar', label: 'Heptastar' },
+  { id: 'five-element', label: 'Five Element' },
+  { id: 'duan-xuan', label: 'Duan Xuan' }
 ];
 
 const sideJobTabs: Tab[] = [
-  { id: 'elixirist', label: '炼丹师' },
-  { id: 'fuluist', label: '符咒师' },
-  { id: 'musician', label: '琴师' },
-  { id: 'painter', label: '画师' },
-  { id: 'formation-master', label: '阵法师' },
-  { id: 'plant-master', label: '灵植师' },
-  { id: 'fortune-teller', label: '命理师' }
+  { id: 'elixirist', label: 'Elixirist' },
+  { id: 'fuluist', label: 'Fuluist' },
+  { id: 'musician', label: 'Musician' },
+  { id: 'painter', label: 'Painter' },
+  { id: 'formation-master', label: 'Formation Master' },
+  { id: 'plant-master', label: 'Plant Master' },
+  { id: 'fortune-teller', label: 'Fortune Teller' }
 ];
 
 const phaseTabs: Tab[] = [
-  { id: 'all', label: '全部' },
-  { id: '1', label: '炼气' },
-  { id: '2', label: '筑基' },
-  { id: '3', label: '金丹' },
-  { id: '4', label: '元婴' },
-  { id: '5', label: '化神' }
+  { id: 'all', label: 'All' },
+  { id: '1', label: 'Qi Refining' },
+  { id: '2', label: 'Foundation' },
+  { id: '3', label: 'Golden Core' },
+  { id: '4', label: 'Nascent Soul' },
+  { id: '5', label: 'Soul Formation' }
 ];
 
 const CardDeck: React.FC<CardDeckProps> = ({ cardOperationLog }) => {
@@ -211,7 +211,7 @@ const CardDeck: React.FC<CardDeckProps> = ({ cardOperationLog }) => {
                 if (checked) setShowOnlySideJobCards(false);
               }}
             />
-            只显示门派牌
+            Sect Cards Only
           </label>
         </div>
         <div className="tab-row">
@@ -230,7 +230,7 @@ const CardDeck: React.FC<CardDeckProps> = ({ cardOperationLog }) => {
               checked={isSideJobMultiSelect}
               onChange={(e) => setIsSideJobMultiSelect(e.target.checked)}
             />
-            多选
+            Multi-Select
           </label>
           <label className="multi-select-label">
             <input
@@ -242,7 +242,7 @@ const CardDeck: React.FC<CardDeckProps> = ({ cardOperationLog }) => {
                 if (checked) setShowOnlySectCards(false);
               }}
             />
-            只显示副职牌
+            Side Job Cards Only
           </label>
         </div>
         <div className="tab-row">
@@ -261,7 +261,7 @@ const CardDeck: React.FC<CardDeckProps> = ({ cardOperationLog }) => {
               checked={isPhaseMultiSelect}
               onChange={(e) => setIsPhaseMultiSelect(e.target.checked)}
             />
-            多选
+            Multi-Select
           </label>
         </div>
         <div className="tab-row">
@@ -271,7 +271,7 @@ const CardDeck: React.FC<CardDeckProps> = ({ cardOperationLog }) => {
               checked={hideEmptyCards}
               onChange={(e) => setHideEmptyCards(e.target.checked)}
             />
-            隐藏数量为0的卡牌
+            Hide Empty Cards
           </label>
           <label className="multi-select-label">
             <input
@@ -279,7 +279,7 @@ const CardDeck: React.FC<CardDeckProps> = ({ cardOperationLog }) => {
               checked={showOnlyOneCard}
               onChange={(e) => setShowOnlyOneCard(e.target.checked)}
             />
-            只显示数量小于等于1的卡牌
+            Show Cards ≤1 Only
           </label>
           <label className="multi-select-label">
             <input
@@ -287,7 +287,7 @@ const CardDeck: React.FC<CardDeckProps> = ({ cardOperationLog }) => {
               checked={showOnlyTracking}
               onChange={(e) => setShowOnlyTracking(e.target.checked)}
             />
-            只显示追踪中的卡牌
+            Show Tracked Only
           </label>
         </div>
       </div>

@@ -14,10 +14,10 @@ interface TrackingCardContainerProps {
 }
 
 const tabs: Tab[] = [
-  { id: 'all', label: '全部' },
-  { id: 'sect', label: '门派' },
-  { id: 'side-jobs', label: '副职' },
-  { id: 'fortune', label: '机缘' }
+  { id: 'all', label: 'All' },
+  { id: 'sect', label: 'Sect' },
+  { id: 'side-jobs', label: 'Side Jobs' },
+  { id: 'fortune', label: 'Fortune' }
 ];
 
 const TrackingCardContainer: React.FC<TrackingCardContainerProps> = ({ cards }) => {
@@ -59,7 +59,7 @@ const TrackingCardContainer: React.FC<TrackingCardContainerProps> = ({ cards }) 
 
   return (
     <div className="tracking-card-container">
-      <h2 className="tracking-card-title">追踪中的卡牌</h2>
+      <h2 className="tracking-card-title">Tracked Cards</h2>
       
       <div className="tab-container">
         {tabs.map(tab => (

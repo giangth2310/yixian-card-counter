@@ -12,46 +12,46 @@ interface Tab {
 }
 
 const trackingFilters: Tab[] = [
-  { id: 'match', label: '对局' },
-  { id: 'deck', label: '牌库' }
+  { id: 'match', label: 'Match' },
+  { id: 'deck', label: 'Deck' }
 ];
 
 const typeFilters: Tab[] = [
-  { id: 'sect', label: '门派' },
-  { id: 'side-jobs', label: '副职' },
-  { id: 'fortune', label: '机缘' },
-  { id: 'personal', label: '个人' }
+  { id: 'sect', label: 'Sect' },
+  { id: 'side-jobs', label: 'Side Jobs' },
+  { id: 'fortune', label: 'Fortune' },
+  { id: 'personal', label: 'Personal' }
 ];
 
 const categoryFilters = {
   sect: [
-    { id: 'cloud-spirit', label: '云灵剑宗' },
-    { id: 'heptastar', label: '七星阁' },
-    { id: 'five-element', label: '五行道盟' },
-    { id: 'duan-xuan', label: '锻玄宗' }
+    { id: 'cloud-spirit', label: 'Cloud Spirit' },
+    { id: 'heptastar', label: 'Heptastar' },
+    { id: 'five-element', label: 'Five Element' },
+    { id: 'duan-xuan', label: 'Duan Xuan' }
   ],
   'side-jobs': [
-    { id: 'elixirist', label: '炼丹师' },
-    { id: 'fuluist', label: '符咒师' },
-    { id: 'musician', label: '琴师' },
-    { id: 'painter', label: '画师' },
-    { id: 'formation-master', label: '阵法师' },
-    { id: 'plant-master', label: '灵植师' },
-    { id: 'fortune-teller', label: '命理师' }
+    { id: 'elixirist', label: 'Elixirist' },
+    { id: 'fuluist', label: 'Fuluist' },
+    { id: 'musician', label: 'Musician' },
+    { id: 'painter', label: 'Painter' },
+    { id: 'formation-master', label: 'Formation Master' },
+    { id: 'plant-master', label: 'Plant Master' },
+    { id: 'fortune-teller', label: 'Fortune Teller' }
   ],
   fortune: [
-    { id: 'talisman', label: '法宝' },
-    { id: 'spiritual-pet', label: '灵宠' },
-    { id: 'cloud-spirit', label: '云灵剑宗秘术' },
-    { id: 'heptastar', label: '七星阁秘术' },
-    { id: 'five-element', label: '五行道盟秘术' },
-    { id: 'duan-xuan', label: '锻玄宗秘术' }
+    { id: 'talisman', label: 'Talisman' },
+    { id: 'spiritual-pet', label: 'Spiritual Pet' },
+    { id: 'cloud-spirit', label: 'Cloud Spirit Secret' },
+    { id: 'heptastar', label: 'Heptastar Secret' },
+    { id: 'five-element', label: 'Five Element Secret' },
+    { id: 'duan-xuan', label: 'Duan Xuan Secret' }
   ],
   personal: [
-    { id: 'cloud-spirit', label: '云灵剑宗' },
-    { id: 'heptastar', label: '七星阁' },
-    { id: 'five-element', label: '五行道盟' },
-    { id: 'duan-xuan', label: '锻玄宗' }
+    { id: 'cloud-spirit', label: 'Cloud Spirit' },
+    { id: 'heptastar', label: 'Heptastar' },
+    { id: 'five-element', label: 'Five Element' },
+    { id: 'duan-xuan', label: 'Duan Xuan' }
   ]
 };
 
@@ -82,22 +82,22 @@ const personalSectMap: Record<string, string> = {
 };
 
 const phaseFilters: Tab[] = [
-  { id: 'all', label: '全部' },
-  { id: '1', label: '炼气' },
-  { id: '2', label: '筑基' },
-  { id: '3', label: '金丹' },
-  { id: '4', label: '元婴' },
-  { id: '5', label: '化神' }
+  { id: 'all', label: 'All' },
+  { id: '1', label: 'Qi Refining' },
+  { id: '2', label: 'Foundation' },
+  { id: '3', label: 'Golden Core' },
+  { id: '4', label: 'Nascent Soul' },
+  { id: '5', label: 'Soul Formation' }
 ];
 
 const fortunePhaseFilters: Tab[] = [
-  { id: 'all', label: '全部' },
-  { id: '1', label: '炼气' },
-  { id: '2', label: '筑基' },
-  { id: '3', label: '金丹' },
-  { id: '4', label: '元婴' },
-  { id: '5', label: '化神' },
-  { id: '6', label: '返虚' }
+  { id: 'all', label: 'All' },
+  { id: '1', label: 'Qi Refining' },
+  { id: '2', label: 'Foundation' },
+  { id: '3', label: 'Golden Core' },
+  { id: '4', label: 'Nascent Soul' },
+  { id: '5', label: 'Soul Formation' },
+  { id: '6', label: 'Void Return' }
 ];
 
 const characterInfo: Record<string, { name: string; avatar: string }> = {

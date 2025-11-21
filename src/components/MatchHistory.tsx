@@ -27,16 +27,16 @@ const MatchHistory: React.FC<MatchHistoryItemProps> = ({
         onClick={() => onRoundClick(roundNumber)}
       >
         <div className="header-info">
-          <span className="round-label">第{roundNumber}回合</span>
+          <span className="round-label">Round {roundNumber}</span>
           <div className="header-stats">
-            <span>修为 {history.cultivation}</span>
-            <span>生命 {history.health}</span>
-            <span>命元 {history.destiny}({history.destiny_diff})</span>
-            <span>对手 {history.opponent_username}</span>
+            <span>Cultivation: {history.cultivation}</span>
+            <span>HP: {history.health}</span>
+            <span>Destiny: {history.destiny}({history.destiny_diff})</span>
+            <span>Opponent: {history.opponent_username}</span>
           </div>
         </div>
         <span className={`result-label ${isWin ? 'win' : 'lose'}`}>
-          {isWin ? '胜' : '负'}
+          {isWin ? 'Win' : 'Loss'}
         </span>
       </div>
       

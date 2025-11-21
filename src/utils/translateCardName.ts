@@ -1,4 +1,4 @@
-import termsData from '../../terms.json';
+import termsData from '../data/terms.json';
 
 // Build a mapping from Chinese card names to Vietnamese
 const cardNameMapping: Record<string, string> = {};

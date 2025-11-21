@@ -90,7 +90,7 @@ export const TrackButton: React.FC<{
       style={buttonStyle}
       disabled={isUpdating}
     >
-      {isUpdating ? 'Updating...' : (isTrackingStatus ? '追踪中' : '追踪')}
+      {isUpdating ? 'Đang cập nhật...' : (isTrackingStatus ? 'Đang theo dõi' : 'Theo dõi')}
     </button>
   );
 };
@@ -103,7 +103,7 @@ export const RecommendLabel: React.FC = () => {
       fontSize: '12px',
       marginRight: '8px'
     }}>
-      推荐
+      Đề xuất
     </span>
   );
 };

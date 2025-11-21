@@ -12,46 +12,46 @@ interface Tab {
 }
 
 const trackingFilters: Tab[] = [
-  { id: 'match', label: '对局' },
-  { id: 'deck', label: '牌库' }
+  { id: 'match', label: 'Trận đấu' },
+  { id: 'deck', label: 'Bộ bài' }
 ];
 
 const typeFilters: Tab[] = [
-  { id: 'sect', label: '门派' },
-  { id: 'side-jobs', label: '副职' },
-  { id: 'fortune', label: '机缘' },
-  { id: 'personal', label: '个人' }
+  { id: 'sect', label: 'Môn phái' },
+  { id: 'side-jobs', label: 'Phó nghề' },
+  { id: 'fortune', label: 'Cơ duyên' },
+  { id: 'personal', label: 'Cá nhân' }
 ];
 
 const categoryFilters = {
   sect: [
-    { id: 'cloud-spirit', label: '云灵剑宗' },
-    { id: 'heptastar', label: '七星阁' },
-    { id: 'five-element', label: '五行道盟' },
-    { id: 'duan-xuan', label: '锻玄宗' }
+    { id: 'cloud-spirit', label: 'Vân Linh Kiếm Tông' },
+    { id: 'heptastar', label: 'Thất Tinh Các' },
+    { id: 'five-element', label: 'Ngũ Hành Đạo Minh' },
+    { id: 'duan-xuan', label: 'Đoán Huyền Tông' }
   ],
   'side-jobs': [
-    { id: 'elixirist', label: '炼丹师' },
-    { id: 'fuluist', label: '符咒师' },
-    { id: 'musician', label: '琴师' },
-    { id: 'painter', label: '画师' },
-    { id: 'formation-master', label: '阵法师' },
-    { id: 'plant-master', label: '灵植师' },
-    { id: 'fortune-teller', label: '命理师' }
+    { id: 'elixirist', label: 'Luyện đan sư' },
+    { id: 'fuluist', label: 'Phù chú sư' },
+    { id: 'musician', label: 'Cầm sư' },
+    { id: 'painter', label: 'Họa sư' },
+    { id: 'formation-master', label: 'Trận pháp sư' },
+    { id: 'plant-master', label: 'Linh thực sư' },
+    { id: 'fortune-teller', label: 'Mệnh lý sư' }
   ],
   fortune: [
-    { id: 'talisman', label: '法宝' },
-    { id: 'spiritual-pet', label: '灵宠' },
-    { id: 'cloud-spirit', label: '云灵剑宗秘术' },
-    { id: 'heptastar', label: '七星阁秘术' },
-    { id: 'five-element', label: '五行道盟秘术' },
-    { id: 'duan-xuan', label: '锻玄宗秘术' }
+    { id: 'talisman', label: 'Pháp bảo' },
+    { id: 'spiritual-pet', label: 'Linh sủng' },
+    { id: 'cloud-spirit', label: 'Bí thuật Vân Linh Kiếm Tông' },
+    { id: 'heptastar', label: 'Bí thuật Thất Tinh Các' },
+    { id: 'five-element', label: 'Bí thuật Ngũ Hành Đạo Minh' },
+    { id: 'duan-xuan', label: 'Bí thuật Đoán Huyền Tông' }
   ],
   personal: [
-    { id: 'cloud-spirit', label: '云灵剑宗' },
-    { id: 'heptastar', label: '七星阁' },
-    { id: 'five-element', label: '五行道盟' },
-    { id: 'duan-xuan', label: '锻玄宗' }
+    { id: 'cloud-spirit', label: 'Vân Linh Kiếm Tông' },
+    { id: 'heptastar', label: 'Thất Tinh Các' },
+    { id: 'five-element', label: 'Ngũ Hành Đạo Minh' },
+    { id: 'duan-xuan', label: 'Đoán Huyền Tông' }
   ]
 };
 
@@ -82,22 +82,22 @@ const personalSectMap: Record<string, string> = {
 };
 
 const phaseFilters: Tab[] = [
-  { id: 'all', label: '全部' },
-  { id: '1', label: '炼气' },
-  { id: '2', label: '筑基' },
-  { id: '3', label: '金丹' },
-  { id: '4', label: '元婴' },
-  { id: '5', label: '化神' }
+  { id: 'all', label: 'Tất cả' },
+  { id: '1', label: 'Luyện khí' },
+  { id: '2', label: 'Trúc Cơ' },
+  { id: '3', label: 'Kim Đan' },
+  { id: '4', label: 'Nguyên Anh' },
+  { id: '5', label: 'Hóa Thần' }
 ];
 
 const fortunePhaseFilters: Tab[] = [
-  { id: 'all', label: '全部' },
-  { id: '1', label: '炼气' },
-  { id: '2', label: '筑基' },
-  { id: '3', label: '金丹' },
-  { id: '4', label: '元婴' },
-  { id: '5', label: '化神' },
-  { id: '6', label: '返虚' }
+  { id: 'all', label: 'Tất cả' },
+  { id: '1', label: 'Luyện khí' },
+  { id: '2', label: 'Trúc Cơ' },
+  { id: '3', label: 'Kim Đan' },
+  { id: '4', label: 'Nguyên Anh' },
+  { id: '5', label: 'Hóa Thần' },
+  { id: '6', label: 'Phản Hư' }
 ];
 
 const characterInfo: Record<string, { name: string; avatar: string }> = {

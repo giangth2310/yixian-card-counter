@@ -96,12 +96,12 @@ const MatchHistoryContainer: React.FC<MatchHistoryContainerProps> = ({ matchHist
   if (!matchHistory || Object.keys(matchHistory).length === 0) {
     return (
       <div className="match-history-container">
-        <h2 className="match-history-title">战绩</h2>
+        <h2 className="match-history-title">Chiến tích</h2>
         <div className="match-history-scroll-view">
           <div className="match-history-list">
             <div className="match-history-item">
               <div className="match-history-header">
-                <span className="round-label">暂无战绩记录</span>
+                <span className="round-label">Chưa có lịch sử trận đấu</span>
               </div>
             </div>
           </div>
@@ -112,7 +112,7 @@ const MatchHistoryContainer: React.FC<MatchHistoryContainerProps> = ({ matchHist
 
   return (
     <div className="match-history-container">
-      <h2 className="match-history-title">战绩</h2>
+      <h2 className="match-history-title">Chiến tích</h2>
       <div className="match-history-list">
         <div className="match-history-scroll-view">
           {Object.entries(processedHistory)

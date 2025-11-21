@@ -25,7 +25,7 @@ const MatchRecord: React.FC<MatchRecordProps> = ({
   onMouseDown,
 }) => {
   if (!players || !selectedPlayer) {
-    return <div className="match-record-loading">等待对战数据中...</div>;
+    return <div className="match-record-loading">Đang chờ dữ liệu trận đấu...</div>;
   }
 
   return (

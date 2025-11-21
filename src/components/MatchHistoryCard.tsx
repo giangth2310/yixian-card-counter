@@ -54,7 +54,7 @@ const MatchHistoryCard: React.FC<MatchHistoryCardProps> = ({ card }) => {
         style={buttonStyle}
         disabled={isUpdating}
       >
-        {isUpdating ? 'Updating...' : (isTracking_match ? '追踪中' : '追踪')}
+        {isUpdating ? 'Đang cập nhật...' : (isTracking_match ? 'Đang theo dõi' : 'Theo dõi')}
       </button>
     </div>
   );
